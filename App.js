@@ -3,7 +3,8 @@ import { StyleSheet } from 'react-native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { NavigationContainer } from '@react-navigation/native'
 
-import { Home, OrderDelivery, Restaurant } from './screens'
+import Tabs from './navigation/tabs'
+import { OrderDelivery, Restaurant } from './screens'
 
 const Stack = createStackNavigator()
 
@@ -14,7 +15,7 @@ const App = () => {
         initialRouteName={'Home'}
         screenOptions={{ headerShown: false }}
       >
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="Home" component={Tabs} />
         <Stack.Screen name="OrderDelivery" component={OrderDelivery} />
         <Stack.Screen name="Restaurant" component={Restaurant} />
       </Stack.Navigator>
