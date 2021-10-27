@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading'
-import { icons, images, SIZES, COLORS, FONTS } from '../constants'
+import { COLORS } from '../constants'
 import { Header, MainCategories, RestaurantList } from '../components/home'
 import { StyleSheet, SafeAreaView, StatusBar, Platform } from 'react-native'
 import {

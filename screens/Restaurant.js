@@ -2,19 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useFonts } from 'expo-font'
 import AppLoading from 'expo-app-loading'
 import { isIphoneX } from 'react-native-iphone-x-helper'
-import { icons, images, SIZES, COLORS, FONTS } from '../constants'
-import { Header } from '../components/restaurants'
-import {
-  Animated,
-  StyleSheet,
-  SafeAreaView,
-  Text,
-  View,
-  TouchableOpacity,
-  Image,
-  Platform,
-  StatusBar,
-} from 'react-native'
+import { COLORS } from '../constants'
+import { Header, FoodInfo } from '../components/restaurants'
+import { StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native'
 
 const Restaurant = ({ route, navigation }) => {
   const [restaurant, setRestaurant] = useState(null)
@@ -36,6 +26,8 @@ const Restaurant = ({ route, navigation }) => {
   return fontsLoaded ? (
     <SafeAreaView style={styles.container}>
       <Header restaurant={restaurant} navigation={navigation} />
+
+      <FoodInfo restaurant={restaurant} />
     </SafeAreaView>
   ) : (
     <AppLoading />
