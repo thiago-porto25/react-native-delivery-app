@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import { icons, SIZES, COLORS, FONTS } from '../../constants'
 
-const FoodInfo = ({ restaurant, scrollX }) => {
+const FoodInfo = ({ restaurant, scrollX, editOrder, getOrderQuantity }) => {
   return (
     <Animated.ScrollView
       horizontal
@@ -45,6 +45,7 @@ const FoodInfo = ({ restaurant, scrollX }) => {
               }}
             >
               <TouchableOpacity
+                onPress={() => editOrder('-', item.menuId, item.price)}
                 style={{
                   width: 50,
                   backgroundColor: COLORS.white,
@@ -65,10 +66,13 @@ const FoodInfo = ({ restaurant, scrollX }) => {
                   justifyContent: 'center',
                 }}
               >
-                <Text style={{ ...FONTS.h2 }}>5</Text>
+                <Text style={{ ...FONTS.h2 }}>
+                  {getOrderQuantity(item.menuId)}
+                </Text>
               </View>
 
               <TouchableOpacity
+                onPress={() => editOrder('+', item.menuId, item.price)}
                 style={{
                   width: 50,
                   backgroundColor: COLORS.white,
