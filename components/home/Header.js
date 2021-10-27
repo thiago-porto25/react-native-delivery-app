@@ -1,12 +1,9 @@
 import React from 'react'
 import { Text, View, TouchableOpacity, Image } from 'react-native'
-import AppLoading from 'expo-app-loading'
 import { icons, SIZES, COLORS, FONTS } from '../../constants'
 
-const Header = ({ fontsLoaded, currentLocation }) => {
-  return !fontsLoaded ? (
-    <AppLoading />
-  ) : (
+const Header = ({ currentLocation }) => {
+  return (
     <View style={{ flexDirection: 'row', height: 50 }}>
       <TouchableOpacity
         style={{

@@ -73,7 +73,7 @@ export const restaurantData = [
     rating: 4.8,
     categories: [5, 7],
     priceRating: affordable,
-    photo: images.burger_restaurant_1,
+    photo: images.burger_restaurant,
     duration: '30 - 45 min',
     location: {
       latitude: 1.5347282806345879,

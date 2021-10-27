@@ -15,8 +15,19 @@ const TabBarCustomButton = ({ accessibilityState, children, onPress }) => {
   const isSelected = accessibilityState.selected
 
   return isSelected ? (
-    <View style={{ flex: 1, alignItems: 'center' }}>
-      <View style={{ flexDirection: 'row', position: 'absolute', top: 0 }}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: 'center',
+      }}
+    >
+      <View
+        style={{
+          flexDirection: 'row',
+          position: 'absolute',
+          top: 0,
+        }}
+      >
         <View style={{ flex: 1, backgroundColor: COLORS.white }}></View>
 
         <Svg width={70} height={61} viewBox="0 0 75 61">
@@ -68,10 +79,10 @@ const CustomTabBar = (props) =>
           backgroundColor: COLORS.white,
         }}
       ></View>
-      <BottomTabBar {...props} />
+      <BottomTabBar {...props.props} />
     </View>
   ) : (
-    <BottomTabBar {...props} />
+    <BottomTabBar {...props.props} />
   )
 
 const Tabs = () => {
@@ -82,7 +93,7 @@ const Tabs = () => {
         headerShown: false,
         tabBarShowLabel: false,
         style: {
-          backgroundColor: 'transparent',
+          backgroundColor: COLORS.transparent,
           borderTopWidth: 0,
           elevation: 0,
           left: 0,
@@ -90,7 +101,7 @@ const Tabs = () => {
           right: 0,
         },
       }}
-      tabBar={(props) => <CustomTabBar {...props} />}
+      tabBar={(props) => <CustomTabBar props={props} />}
     >
       <Tab.Screen
         name="HomeTab"
