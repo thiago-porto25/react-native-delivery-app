@@ -9,7 +9,7 @@ import {
 } from 'react-native'
 import { icons, SIZES, COLORS, FONTS } from '../../constants'
 
-const FoodInfo = ({ restaurant }) => {
+const FoodInfo = ({ restaurant, scrollX }) => {
   return (
     <Animated.ScrollView
       horizontal
@@ -17,6 +17,10 @@ const FoodInfo = ({ restaurant }) => {
       scrollEventThrottle={16}
       snapToAlignment="center"
       showsHorizontalScrollIndicator={false}
+      onScroll={Animated.event(
+        [{ nativeEvent: { contentOffset: { x: scrollX } } }],
+        { useNativeDriver: false }
+      )}
     >
       {restaurant?.menu.map((item, idx) => (
         <View
