@@ -69,7 +69,7 @@ export const expensive = 3
 export const restaurantData = [
   {
     id: 1,
-    name: 'ByProgrammers Burger',
+    name: "Porto's Burger",
     rating: 4.8,
     categories: [5, 7],
     priceRating: affordable,
@@ -78,10 +78,6 @@ export const restaurantData = [
     location: {
       latitude: 1.5347282806345879,
       longitude: 110.35632207358996,
-    },
-    courier: {
-      avatar: images.avatar_1,
-      name: 'Amy',
     },
     menu: [
       {
@@ -112,7 +108,7 @@ export const restaurantData = [
   },
   {
     id: 2,
-    name: 'ByProgrammers Pizza',
+    name: "Porto's Pizza",
     rating: 4.8,
     categories: [2, 4, 6],
     priceRating: expensive,
@@ -121,10 +117,6 @@ export const restaurantData = [
     location: {
       latitude: 1.556306570595712,
       longitude: 110.35504616746915,
-    },
-    courier: {
-      avatar: images.avatar_2,
-      name: 'Jackson',
     },
     menu: [
       {
@@ -164,7 +156,7 @@ export const restaurantData = [
   },
   {
     id: 3,
-    name: 'ByProgrammers Hotdogs',
+    name: "Porto's Hotdogs",
     rating: 4.8,
     categories: [3],
     priceRating: expensive,
@@ -173,10 +165,6 @@ export const restaurantData = [
     location: {
       latitude: 1.5238753474714375,
       longitude: 110.34261833833622,
-    },
-    courier: {
-      avatar: images.avatar_3,
-      name: 'James',
     },
     menu: [
       {
@@ -191,7 +179,7 @@ export const restaurantData = [
   },
   {
     id: 4,
-    name: 'ByProgrammers Sushi',
+    name: "Porto's Sushi",
     rating: 4.8,
     categories: [8],
     priceRating: expensive,
@@ -200,10 +188,6 @@ export const restaurantData = [
     location: {
       latitude: 1.5578068150528928,
       longitude: 110.35482523764315,
-    },
-    courier: {
-      avatar: images.avatar_4,
-      name: 'Ahmad',
     },
     menu: [
       {
@@ -218,7 +202,7 @@ export const restaurantData = [
   },
   {
     id: 5,
-    name: 'ByProgrammers Cuisine',
+    name: "Porto's Cuisine",
     rating: 4.8,
     categories: [1, 2],
     priceRating: affordable,
@@ -227,10 +211,6 @@ export const restaurantData = [
     location: {
       latitude: 1.558050496260768,
       longitude: 110.34743759630511,
-    },
-    courier: {
-      avatar: images.avatar_4,
-      name: 'Muthu',
     },
     menu: [
       {
@@ -269,7 +249,7 @@ export const restaurantData = [
   },
   {
     id: 6,
-    name: 'ByProgrammers Dessets',
+    name: "Porto's Desserts",
     rating: 4.9,
     categories: [9, 10],
     priceRating: affordable,
@@ -278,10 +258,6 @@ export const restaurantData = [
     location: {
       latitude: 1.5573478487252896,
       longitude: 110.35568783282145,
-    },
-    courier: {
-      avatar: images.avatar_1,
-      name: 'Jessie',
     },
     menu: [
       {

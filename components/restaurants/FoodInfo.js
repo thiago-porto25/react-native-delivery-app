@@ -1,12 +1,5 @@
 import React from 'react'
-import {
-  Animated,
-  Image,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native'
+import { Animated, Image, Text, TouchableOpacity, View } from 'react-native'
 import { icons, SIZES, COLORS, FONTS } from '../../constants'
 
 const FoodInfo = ({ restaurant, scrollX, editOrder, getOrderQuantity }) => {

@@ -92,8 +92,6 @@ const Restaurant = ({ route, navigation }) => {
         scrollX={scrollX}
         getBasketItemCount={getBasketItemCount}
         sumOrder={sumOrder}
-        navigation={navigation}
-        currentLocation={currentLocation}
       />
     </SafeAreaView>
   ) : (

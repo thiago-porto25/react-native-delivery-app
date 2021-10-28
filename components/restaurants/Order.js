@@ -3,19 +3,12 @@ import { View, Animated, Text, Image, TouchableOpacity } from 'react-native'
 import { COLORS, FONTS, icons, SIZES } from '../../constants'
 import { isIphoneX } from 'react-native-iphone-x-helper'
 
-const Order = ({
-  restaurant,
-  scrollX,
-  getBasketItemCount,
-  sumOrder,
-  navigation,
-  currentLocation,
-}) => {
+const Order = ({ restaurant, scrollX, getBasketItemCount, sumOrder }) => {
   function renderDots() {
     const dotPosition = Animated.divide(scrollX, SIZES.width)
 
     return (
-      <View style={{ height: 30 }}>
+      <View style={{ height: 15 }}>
         <View
           style={{
             flexDirection: 'row',
@@ -128,12 +121,6 @@ const Order = ({
           }}
         >
           <TouchableOpacity
-            onPress={() =>
-              navigation.navigate('OrderDelivery', {
-                restaurant,
-                currentLocation,
-              })
-            }
             style={{
               width: SIZES.width * 0.9,
               padding: SIZES.padding,
