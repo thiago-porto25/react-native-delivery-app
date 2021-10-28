@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "FoodDelivery",
+    "name": "Food Delivery",
     "slug": "FoodDelivery",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -13,7 +13,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -25,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A mock Delivery App created with React Native. It doesn't have much functionality as it is more to showcase styling.",
+    "githubUrl": "https://github.com/thiago-porto25/react-native-delivery-app"
   }
 }
